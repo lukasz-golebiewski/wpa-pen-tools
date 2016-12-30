@@ -1,3 +1,3 @@
 #/bin/bash
 docker build -t kali .
-docker run -it --net="host" --privileged --name wifi-kali kali bash
+docker run -P -it --net="host" --privileged -v `pwd`/home:/home --name wifi-kali kali bash
