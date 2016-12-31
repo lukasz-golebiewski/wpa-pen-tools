@@ -1,3 +1,4 @@
 [submodule "Pyrit"]
 	path = Pyrit
 	url = git@github.com:JPaulMora/Pyrit.git
+	branch = dev
